@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Sasta Star Wars</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1080px; height: 1920px; background: url('Build/Sasta Star Wars.jpg') center / cover"></canvas>
+    <script src="Build/Sasta Star Wars.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Sasta Star Wars.data.gz",
+        frameworkUrl: "Build/Sasta Star Wars.framework.js.gz",
+        codeUrl: "Build/Sasta Star Wars.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Sasta Star Wars",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
